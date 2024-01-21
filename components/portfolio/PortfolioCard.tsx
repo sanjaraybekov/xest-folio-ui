@@ -1,11 +1,6 @@
 import React from "react";
 import Banner from "../Banner";
-
-export type ProjectType = {
-  image: string;
-  name?: string;
-  type?: string;
-};
+import { ProjectType } from "../types";
 
 interface Props {
   project: ProjectType;

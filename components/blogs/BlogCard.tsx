@@ -1,15 +1,7 @@
 import React from "react";
 import Banner from "../Banner";
 import Link from "next/link";
-
-type BlogType = {
-  image: string;
-  type: string;
-  date: string;
-  title: string;
-  description: string;
-  link: string;
-};
+import { BlogType } from "../types";
 
 interface Props {
   blog: BlogType;

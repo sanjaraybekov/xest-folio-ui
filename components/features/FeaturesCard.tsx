@@ -1,11 +1,6 @@
 import React from "react";
 import Banner from "../Banner";
-
-type FeatureType = {
-  image: string;
-  title: string;
-  description: string;
-};
+import { FeatureType } from "../types";
 
 interface Props {
   feature: FeatureType;

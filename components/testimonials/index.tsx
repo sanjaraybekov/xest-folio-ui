@@ -1,7 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TesterCard from "./TesterCard";
-import { Autoplay } from "swiper/modules";
 import { testemonialBreakpoints } from "../constants";
 import { getWindow } from "../next-utils";
 

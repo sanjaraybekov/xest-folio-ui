@@ -2,11 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { formatNumber } from "../utils";
 import { Autoplay } from "swiper/modules";
-
-type Count = {
-  count: number;
-  title: string;
-};
+import { Count } from "../types";
 
 const counts: Count[] = [
   {
