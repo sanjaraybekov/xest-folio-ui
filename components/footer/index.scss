@@ -1,0 +1,155 @@
+.footer {
+    .gradient-text-bg {
+        margin: 0 auto 15px auto;
+    }
+
+
+
+    &-body {
+        padding: 140px 0 70px 0;
+
+        .gradient-circle {
+            background: linear-gradient(#5635DD -2.48%, #E63573 99.68%);
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 37px auto 100px auto;
+        }
+
+        .logo {
+            width: 72px;
+            margin: 0 auto 86px auto;
+
+        }
+    }
+
+    &-bottom {
+        padding: 34px 0 37px;
+        border-top: 1px solid $natural-4;
+    }
+
+    @media(max-width:1023px) {
+        .gradient-text-bg {
+            margin: 0 auto 10px auto;
+            font-size: $typography-size7;
+        }
+
+
+
+        &-body {
+            padding: 117px 0 53px 0;
+
+            .size-2 {
+                font-size: 46px;
+            }
+
+            .gradient-circle {
+                width: 192px;
+                height: 192px;
+                margin: 29px auto 77px auto;
+
+                .secondry-3 {
+                    font-size: $typography-size8;
+                }
+
+                img {
+                    width: 20px;
+                }
+            }
+
+            .logo {
+                width: 55px;
+                margin: 0 auto 66px auto;
+
+            }
+
+            &-socials {
+                a {
+                    width: 25px;
+                    height: 25px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            padding: 29px 0 55px;
+
+            .corp {
+                font-size: $typography-size7;
+            }
+        }
+    }
+
+    @media(max-width:768px) {
+        .gradient-text-bg {
+            margin: 0 auto 19px auto;
+        }
+
+        &-body {
+            padding: 90px 0 48px 0;
+
+            .size-2 {
+                font-size: 36px;
+                line-height: 135%;
+            }
+
+            .gradient-circle {
+                width: 143px;
+                height: 143px;
+                margin: 44px auto 74px auto;
+
+                .secondry-3 {
+                    margin: 25px auto 8px auto;
+                    font-size: $typography-size9;
+                }
+
+                img {
+                    width: 15px;
+                }
+            }
+
+            .logo {
+                width: 72px;
+                margin: 0 auto 66px auto;
+
+            }
+
+            &-socials {
+                a {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+
+        &-bottom {
+            padding: 0 0 37px;
+            border: none;
+            position: relative;
+
+            .absolute-border {
+                width: 100%;
+                border-top: 1px solid $natural-4;
+                position: absolute;
+                top: 35%;
+                transform: translateY(-35%);
+            }
+
+            .flex-item-center {
+                flex-direction: column-reverse;
+
+                .corp {
+                    &:last-child {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

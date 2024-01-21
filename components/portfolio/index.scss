@@ -1,0 +1,170 @@
+.portfolio {
+    margin-bottom: 153px;
+
+    &-header {
+        margin: 0 0 59px 0;
+
+    }
+
+    .row-reverce {
+        flex-direction: row-reverse;
+    }
+
+    &-card {
+        position: relative;
+        height: 292px;
+        margin-bottom: 22px;
+        padding: 0 39px 25px;
+
+        &-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            filter: grayscale(100%);
+            transition: 0.3s all;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                height: 100% !important;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .portfolio-card-banner {
+                filter: none;
+            }
+        }
+
+
+        &-content {
+            position: absolute;
+            z-index: 2;
+            bottom: 25px;
+        }
+    }
+
+    .second-child {
+        padding: 0 7px;
+    }
+
+
+    @media(max-width: 1023px) {
+
+        .container.projects {
+            padding-right: 0;
+            margin-right: 0;
+            max-width: 95%;
+        }
+
+
+        margin-bottom: 148px;
+
+        &-header {
+            margin: 0 0 49px 0;
+
+            .title {
+                font-size: 32px;
+            }
+        }
+
+        &-card {
+            height: 224px;
+            margin-bottom: 0;
+            padding: 0 30px 19px;
+
+            &-content {
+                bottom: 19px;
+
+                .gradient-text-bg {
+                    font-size: 11px;
+                }
+
+                .title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px) and (min-width: 768px) {
+        .container.projects {
+            max-width: 88%;
+        }
+    }
+
+    @media(max-width: 860px) and (min-width: 768px) {
+
+        .container.projects {
+            max-width: 95%;
+        }
+    }
+
+    @media(max-width: 836px) and (min-width: 768px) {
+        .container.projects {
+            max-width: 95%;
+        }
+    }
+
+    @media(max-width: 767px) {
+        margin: 51px 0 100px;
+
+        .container.projects {
+            max-width: 88%;
+
+            .swiper {
+                .swiper-wrapper {
+                    flex-direction: unset !important;
+                }
+            }
+        }
+
+        &-header {
+            margin: 0 0 64px 0;
+
+            &.flex-item-center {
+                display: block;
+            }
+
+            .title {
+                font-size: 28px;
+                margin: 8px 0 47px 0;
+            }
+        }
+
+        &-card {
+            margin-bottom: 0;
+            padding: 0 30px 23px;
+            height: 274px;
+
+            &-content {
+                bottom: 23px;
+
+                .gradient-text-bg {
+                    font-size: $typography-size8;
+                }
+
+                .title {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 576px) {
+
+        .container.projects {
+            max-width: 100%;
+            margin-right: auto;
+        }
+
+        &-card {
+            height: 224px;
+        }
+    }
+}

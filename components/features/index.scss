@@ -1,0 +1,126 @@
+.features {
+    &-left-side {
+
+        .title {
+            margin: 6px 0 32px 0;
+        }
+
+        .description {
+            margin-bottom: 43px;
+            line-height: 140%;
+            width: 90%;
+        }
+    }
+
+    &-right-side {
+        &.first {
+            .features-card {
+                &:first-child {
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+
+    &-card {
+        margin-bottom: 50px;
+
+        &-banner {
+            filter: grayscale(100%);
+            transition: 0.3s all;
+            border-radius: 0 10px;
+            overflow: hidden;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .features-card-banner {
+                filter: none;
+            }
+        }
+
+        &-body {
+            &-title {
+                margin: 7px 0 11px 0;
+            }
+        }
+    }
+
+    @media(max-width:1023px) {
+        &-left-side {
+            .title {
+                font-size: 32px;
+                margin-bottom: 22px;
+            }
+
+            .description {
+                font-size: $typography-size8;
+                margin: 0 0 33px 0;
+
+            }
+        }
+
+        &-right-side {
+            &.first {
+                .features-card {
+                    &:first-child {
+                        margin-top: 46px;
+                    }
+                }
+            }
+        }
+
+        &-card {
+            margin-bottom: 37px;
+
+            &-banner {
+                border-radius: 0 7.7px;
+            }
+
+            &-body {
+                &-title {
+                    margin: 5px 0 9px 0;
+                    font-size: $typography-size5;
+                }
+
+                .natural-5 {
+                    font-size: $typography-size8;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 768px) {
+        &-left-side {
+            .title {
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+
+            .description {
+                width: 100%;
+            }
+        }
+
+        &-card {
+            margin-bottom: 29px;
+
+            &-banner {
+                border-radius: 0 12px;
+            }
+
+            &-body {
+                &-title {
+                    margin: 8.5px 0 4.3px 0;
+                    font-size: 24px;
+                    line-height: 140%;
+                }
+
+                .natural-5 {
+                    font-size: $typography-size6;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+a {
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+.text-bold {
+    font-family: "PJSans-Bold";
+}
+
+.text-ebold {
+    font-family: "PJSans-ExtraBold";
+}
+
+.text-medium {
+    font-family: "PJSans-Medium";
+}
+
+.text-regular {
+    font-family: "PJSans-Regular";
+}
+
+.text-semi-bold {
+    font-family: "PJSans-SemiBold";
+}
+
+.gradient-bg {
+    background: $gradient-bg;
+}
+
+.primary-1 {
+    color: $primary-1;
+}
+
+.secondry-1 {
+    color: $secondry-1;
+}
+
+.secondry-2 {
+    color: $secondry-2;
+}
+
+.secondry-3 {
+    color: $secondry-3;
+}
+
+
+.natural-1 {
+    color: $natural-1;
+}
+
+.natural-2 {
+    color: $natural-2;
+}
+
+.natural-3 {
+    color: $natural-3;
+}
+
+.natural-4 {
+    color: $natural-4;
+}
+
+.natural-5 {
+    color: $natural-5;
+}
+
+.natural-6 {
+    color: $natural-6;
+}
+
+.natural-7 {
+    color: $natural-7;
+}
+
+.natural-8 {
+    color: $natural-8;
+}
+
+.natural-9 {
+    color: $natural-9;
+}
+
+.natural-10 {
+    color: $natural-10;
+}
+
+.size-1 {
+    font-size: $typography-size1;
+}
+
+.size-2 {
+    font-size: $typography-size2;
+}
+
+.size-3 {
+    font-size: $typography-size3;
+}
+
+.size-4 {
+    font-size: $typography-size4;
+}
+
+.size-5 {
+    font-size: $typography-size5;
+}
+
+.size-6 {
+    font-size: $typography-size6;
+}
+
+.size-7 {
+    font-size: $typography-size7;
+}
+
+.size-8 {
+    font-size: $typography-size8;
+}
+
+.size-9 {
+    font-size: $typography-size9;
+}
+
+.flex-item-center {
+    display: flex;
+    align-items: center;
+}
+
+.gradient-text-bg {
+    background: linear-gradient(91deg, #5635DD -2.48%, #E63573 99.68%);
+    background-clip: text;
+    color: transparent;
+    width: max-content;
+    letter-spacing: 2.1px;
+}

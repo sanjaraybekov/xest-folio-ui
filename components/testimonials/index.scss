@@ -1,0 +1,159 @@
+.testimonials {
+    margin: 160px 0 87px 0;
+
+    .gradient-text-bg {
+        text-align: center;
+    }
+
+    .title {
+        margin: 22px auto 0 auto;
+        text-align: center;
+
+    }
+
+    .swiper {
+        .swiper-wrapper {
+            padding: 58px 0;
+
+            .swiper-slide {
+                padding: 15px;
+            }
+        }
+
+    }
+
+    .tester-card {
+        padding: 24px;
+
+        box-shadow: 0px 4px 100px 0px rgba(175, 173, 181, 0.10);
+
+        .quote {
+            width: 40px;
+        }
+
+        .comment {
+            margin: 26px 0;
+        }
+
+        &-bottom {
+            .user {
+                .banner {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    width: 50px;
+                    margin-right: 14px;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+
+            }
+
+            .rate {
+                .banner {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+
+    }
+
+
+    @media(max-width:1023px) {
+        margin: 108px 0 37px 0;
+
+        .title {
+            font-size: 32px;
+            margin-top: 17px;
+        }
+
+        .swiper {
+            .swiper-wrapper {
+                padding: 50px 0;
+            }
+
+        }
+
+        .tester-card {
+            .quote {
+                width: 35px;
+            }
+
+            .comment {
+                margin: 23px 0 21px 0;
+                font-size: $typography-size6;
+            }
+
+            &-bottom {
+                .user {
+                    .banner {
+                        width: 44px;
+                        margin-right: 12px;
+                    }
+
+                    .size-4 {
+                        font-size: $typography-size5;
+                    }
+                }
+
+                .rate {
+                    font-size: $typography-size6;
+
+                    .banner {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+    @media(max-width: 768px) {
+
+        margin: 75px 0 0 0;
+
+        .title {
+            font-size: 28px;
+            margin-top: 6px;
+        }
+
+        .swiper {
+            height: 900px;
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    height: max-content !important;
+                    padding: 12px 9px;
+                }
+            }
+        }
+
+        .tester-card {
+            padding: 23px 21px;
+
+            .comment {
+                margin: 22px 0 23px 0;
+                line-height: 180%;
+            }
+
+            &-bottom {
+                .user {
+                    .size-4 {
+                        font-size: 17.6px;
+                    }
+                }
+
+                .rate {
+                    .banner {
+                        margin-right: 9px;
+                        width: 21px;
+                    }
+                }
+            }
+        }
+    }
+}

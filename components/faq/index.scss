@@ -1,0 +1,132 @@
+.question-answer {
+    background-color: #181818;
+    padding: 127px 0 130px;
+
+    .question-accordion {
+        &-item {
+            .handle-btn {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #222222;
+                padding: 20px;
+                font-size: 20px;
+                box-shadow: none;
+
+                .banner {
+                    transition: 0.3s all;
+                }
+
+            }
+
+            &-info {
+                height: 0px;
+                overflow: hidden;
+                transition: 0.3s all;
+                opacity: 0;
+                padding: 10px;
+
+            }
+
+            &.active {
+                .handle-btn {
+                    .banner {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .question-accordion-item-info {
+                    height: 300px;
+                    overflow: auto;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .right-side {
+        padding-left: 90px;
+
+        .title {
+            margin: 9px 0 24px 0;
+        }
+    }
+
+    @media(max-width:1023px) {
+        padding: 97px 0 100px;
+
+
+        .question-accordion {
+            &-item {
+                .handle-btn {
+                    padding: 16px 14px;
+                    font-size: $typography-size6;
+                }
+
+                &-info {
+                    padding: 7.7px;
+
+                    .size-5 {
+                        font-size: $typography-size7;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+        .right-side {
+            padding-left: 68px;
+
+            .title {
+                margin: 0 0 15px 0;
+                font-size: 32px;
+            }
+
+            .size-6 {
+                line-height: 144%;
+                font-size: $typography-size8;
+            }
+        }
+    }
+
+    @media(max-width:991px) {
+        .right-side {
+            padding-left: 48px;
+        }
+    }
+
+    @media(max-width: 768px) {
+        padding: 49px 0 50px;
+
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        .right-side {
+            padding: 0 15px;
+
+            .title {
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+
+            .natural-5 {
+                margin-bottom: 36px;
+            }
+        }
+
+        .question-accordion {
+            &-item {
+                .handle-btn {
+                    padding: 12px 11px;
+                    font-size: $typography-size8;
+                }
+
+                .size-5 {
+                    font-size: $typography-size8;
+                    line-height: 144%;
+                }
+            }
+        }
+    }
+}

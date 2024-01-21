@@ -1,0 +1,101 @@
+.section-top {
+    padding: 63px 0 172px 0;
+    background: $secondry-3;
+
+    &-left-side,
+    &-right-side {
+        position: relative;
+    }
+
+    &-left-side {
+        z-index: 2;
+        padding-right: 30px;
+        background: $secondry-3;
+
+        .secondry-3 {
+            letter-spacing: -8.5px;
+            margin-left: -3px;
+        }
+
+        .secondry-3 {
+            mix-blend-mode: difference;
+        }
+
+        .natural-5 {
+            line-height: 33px;
+            margin: 3px 0 63px 0;
+        }
+
+        .book-call {
+            width: max-content;
+        }
+    }
+
+    &-right-side {
+        right: 0;
+        border-radius: 0px 50px;
+        overflow: hidden;
+
+    }
+
+    @media(max-width:1023px) {
+        padding: 49px 0 132px 0;
+
+        &-left-side {
+            h1 {
+                font-size: 130px;
+                line-height: 100%;
+
+                &.secondry-3 {
+                    letter-spacing: -4.55px;
+                }
+            }
+
+            .natural-5 {
+                margin: 20px 0 48px;
+                line-height: 25.428px;
+            }
+        }
+    }
+
+    @media(max-width:768px) {
+
+        padding: 19px 0 90px 0;
+
+        .row.align-items-center {
+            flex-direction: column-reverse;
+        }
+
+        &-left-side {
+            padding: 0;
+            background: transparent;
+            margin-top: -85px;
+
+            h1 {
+                font-size: 62px;
+                margin: 0 auto;
+                color: $primary-1;
+
+                &.gradient-text-bg {
+                    mix-blend-mode: difference;
+                    color: $secondry-3;
+                    line-height: 150%;
+                }
+
+                &.secondry-3 {
+                    mix-blend-mode: unset;
+                    text-align: center;
+                    letter-spacing: -2.171px;
+                }
+            }
+
+            .natural-5 {
+                margin: 25px 0 49px;
+                text-align: center;
+            }
+            .aa{
+                margin: 0 auto;
+            }
+        }
+    }
+}

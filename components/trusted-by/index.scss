@@ -1,0 +1,22 @@
+.trusted-by {
+    .swiper {
+        margin: 24px 0 136px 0;
+    }
+
+    @media(max-width: 1023px) {
+        .title {
+            font-size: $typography-size7;
+            line-height: 18.493px;
+        }
+        .swiper{
+            margin: 18px 0 104px 0;
+        }
+    }
+
+    @media(max-width: 768px) {
+       
+        .swiper{
+            margin: 27px 0 83px 0;
+        }
+    }
+}

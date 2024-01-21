@@ -1,0 +1,56 @@
+///font-families
+@font-face {
+    font-family: "PJSans-Medium";
+    src: url("/fonts/PJSans-Medium.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "PJSans-ExtraBold";
+    src: url("/fonts/PJSans-ExtraBold.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "PJSans-Bold";
+    src: url("/fonts/PJSans-Bold.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "PJSans-SemiBold";
+    src: url("/fonts/PJSans-SemiBold.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "PJSans-Regular";
+    src: url("/fonts/PJSans-Regular.ttf") format("truetype"),
+}
+
+////colors
+$gradient-bg: linear-gradient(90deg, #4B34E4 0%, #EE346B 100%);
+
+$primary-1: #131313;
+
+$secondry-1: #000000;
+$secondry-2: #262A2C;
+$secondry-3: #FFFFFF;
+
+$natural-1: #F9FAFB;
+$natural-2: #F4F4F6;
+$natural-3: #E5E6EB;
+$natural-4: #D3D5DA;
+$natural-5: #aaaaaa;
+$natural-6: #6C727F;
+$natural-7: #4D5461;
+$natural-8: #394150;
+$natural-9: #212936;
+$natural-10: #0B0A0F;
+
+///fonts
+$typography-size1: 170px;
+$typography-size2: 60px;
+$typography-size3: 40px;
+$typography-size4: 20px;
+$typography-size5: 18px;
+$typography-size6: 16px;
+$typography-size7: 14px;
+$typography-size8: 12px;
+$typography-size9: 10px;
