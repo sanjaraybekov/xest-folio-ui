@@ -24,7 +24,7 @@ export type Count = {
     type?: string;
   };
 
-  export type TerterType = {
+  export type TesterType = {
     image?: string;
     comment: string;
     fullName: string;

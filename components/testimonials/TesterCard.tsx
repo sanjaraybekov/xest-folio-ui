@@ -1,9 +1,9 @@
 import React from "react";
 import Banner from "../Banner";
-import { TerterType } from "../types";
+import { TesterType } from "../types";
 
 interface Props {
-  tester: TerterType;
+  tester: TesterType;
 }
 
 export default function TesterCard({ tester }: Props) {
